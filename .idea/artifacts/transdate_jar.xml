@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="transdate:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/transdate_jar</output-path>
+    <root id="archive" name="transdate.jar">
+      <element id="module-output" name="transdate" />
+    </root>
+  </artifact>
+</component>
