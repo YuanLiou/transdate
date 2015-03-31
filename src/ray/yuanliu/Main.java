@@ -38,10 +38,12 @@ public class Main {
         if (success) {
             final JFrame parent = new JFrame();
             JOptionPane.showMessageDialog(parent, "Done!");
+            parent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         } else {
             final JFrame parent = new JFrame();
             JOptionPane.showMessageDialog(parent, "Failed, Try again.");
+            parent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         }
-
+        System.exit(0);
     }
 }
