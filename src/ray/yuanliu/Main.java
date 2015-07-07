@@ -10,13 +10,13 @@ import java.io.File;
 public class Main {
 
     public static void main(String[] args) {
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        setUI();
         boolean success = false;
         // 150706: File Chooser
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
         int myfiles = fileChooser.showOpenDialog(new JFrame());
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        setUI();
         final JFrame parent = new JFrame();
         if ( myfiles == JFileChooser.APPROVE_OPTION ) {
             // User selects a file
@@ -81,4 +81,5 @@ public class Main {
             } catch ( Exception e2) {}
         }
     }
+    
 }
